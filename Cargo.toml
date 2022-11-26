@@ -1,0 +1,19 @@
+[package]
+name = "rust-projects"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[workspace]
+members = ["zxc", "simd", "hashes", "pixel-engine", "dota-timings-helper"]
+
+
+[profile.release]
+opt-level = 3
+strip = true
+debug = 0
+panic = "abort"
